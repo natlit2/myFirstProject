@@ -137,6 +137,10 @@ form {
 
 }
 
+form input {
+    margin: 10px;
+}
+
 .text {
     border: 2px solid yellow;
 }
@@ -223,6 +227,10 @@ button:hover {
 button:focus {
     background: red;
     color: greenyellow;
+}
+
+button{
+    margin: 10px;
 }
 
 em {
