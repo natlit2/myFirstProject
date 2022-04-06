@@ -62,6 +62,11 @@ header h1 {
     animation: unblur 3s 1s infinite;
 }
 
+form h2 {
+    margin-top: 5px;
+    align-items: center;
+}
+
 nav {
     border: 2px solid green;
     display: flex;
@@ -217,6 +222,7 @@ footer > :not(button, textarea) {
 
 a img {
     width: 30px;
+    margin: 2px;
 }
 
 button:hover {
