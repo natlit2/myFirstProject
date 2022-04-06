@@ -1,8 +1,90 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Josefin Sans', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+#home h1, #duck h2 {
+     font-family: 'Oswald', sans-serif; 
+     background-color: A3CEF1;
+     font-size: 30;
+     font-weight: bold;
+     margin: 1em;
+     justify-content: center;
+}
+
+header h1 {
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em green;
+    /*animation-name - animation-duration - animation-delay animation-iteration-count */
+    animation: unblur 3s 1s infinite;
+}
+
 nav {
     border: 2px solid green;
     display: flex;
     justify-content: space-between;
+    background-color: #B6FFCE;
+    padding: 1em;
 }
+
+nav a {
+    font-family: 'Rubik Microbe', cursive;
+    text-decoration: none;
+    color: blue;
+    animation: unblur 3s 1s infinite;
+
+}
+
+a:hover {
+    color:#F6FFA4;
+}
+
+a:active {
+    color: red;
+} 
 
 .nav-left {
     border: 2px solid green;
@@ -13,6 +95,7 @@ nav {
 .nav-right {
     border: 2px solid green;
     width: 80%;
+    
 }
 
 ul {
@@ -27,11 +110,31 @@ li {
 
 header {
     border: 2px solid orange;
+    background-color: #F6FFA4;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 #duck {
     border: 2px solid yellow;
     display: flex;
+    background-color: #FDD7AA;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+
+}
+
+form {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .text {
@@ -44,10 +147,34 @@ header {
 
 .duck {
     border: 2px solid yellow;
+
+}
+
+.duck img {
+    width: 150px;
 }
 
 #emergency {
     border: 2px solid blue;
+    background-color: #FDAF75;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+#emergency h2 {
+color: red;
+font-weight: bolder;
+font-size: larger;
+}
+
+#emergency:hover {
+color: darkcyan;
+}
+
+#emergency:active {
+    color: blueviolet;
 }
 
 .grid-container {
@@ -70,8 +197,55 @@ header {
 }
 
 footer {
-    border: 2px solid red;
+    border: 3px solid red;
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: #FFA8A8;
+    align-items: center;
+    
 }
+
+footer > :not(button, textarea) {
+    background-color: cyan;
+    border-radius: 5%;
+}
+
+a img {
+    width: 30px;
+}
+
+button:hover {
+    background: #FDD7AA;
+    color: blue;
+}
+
+button:focus {
+    background: red;
+    color: greenyellow;
+}
+
+em {
+    font-weight: bolder;
+}
+
+#creator {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    margin: 10px;
+}
+
+textarea {
+    margin: 10px;
+}
+
+@keyframes unblur {
+    from {
+      text-shadow: 0 0 8px #c0c0c0;
+      
+    }
+    to {
+      text-shadow: 0;
+    }
+  }
